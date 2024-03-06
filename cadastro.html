@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivineSoles</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<style>
+    *{ 
+       margin: 0;
+       padding: 0;
+       box-sizing: 0;
+    }
+
+    body{
+       width: 100vw;
+       height: 100vh;
+       background-image: url('./sapato.png');
+       background-size: 100%;
+       background-repeat: no-repeat;
+       position: fixed; 
+
+    }
+
+    
+
+</style>
+<body>
+
+   
+    <div class="principal02">
+        <section class = "titulo">
+            <h1>DivineSoles</h1>
+        </section>
+             <br>
+
+             <p>Cadastrar ou Alterar usuário</p>
+             <br>
+             <div class = "nomes">
+                <label>Nome:</label>        
+                <input type="text" nome="nome" id="nome"size="60">
+                <br>
+                <label>CPF: </label>  
+                <input type="text" nome="CPF" id="CPF"size="63">
+                <br>
+                <label>E-mail: </label>  
+                <input type="text" nome="e-mail" id="e-mail"size="59">
+                <br>
+                <label>Senha:</label>  
+                <input type="text" nome="Status" id="Status"size="60">
+                <br>
+                <label>Perfil:</label>  
+                <input type="text" nome="Status" id="Status"size="61">
+                <br>
+                <ul class="bolinha">
+                    <li>
+                        <input type="radio" id="sim" name="opcao" class="bolinha" value="Sim">
+                        <label for="sim">Ativo</label>
+                        <input type="radio" id="nao" name="opcao" class="bolinha" value="Não">
+                        <label for="nao">Inativo</label>
+                    </li>
+                </ul>
+                
+                <div class = "botao-cadastro">
+    
+                <button> OK </button>
+                <button> Cancelar</button>
+                </div>
+             </div>    
+            
+           
+            
+            
+
+</div>
+</body>
