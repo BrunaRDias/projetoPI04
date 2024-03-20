@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivineSoles</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+   
+</head>
+
+<style>
+     *{ 
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+     }
+
+     body{
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./sapato.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+     }
+
+
+    /* input{
+        width: 150px;
+        height: 20px;
+        margin-top: auto;
+        margin-left: 20px;
+        margin-right: 150px;
+        margin: center;
+        background-size: 100px;
+     
+        
+
+    }*/
+
+    
+</style>
+
+<body>
+    <div class="codProduto">
+        <section class = "titulo">
+            <h1>DivineSoles</h1>
+        </section>
+             <br>
+
+       <div class="produtos">
+        <h2>Adicionar Produto</h2>
+        <br>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" name="nome" maxlength="100" required>
+
+            <label for="avaliação">Avaliação:</label>
+            <input type="number" id="avaliação" name="avaliação" step="0.5" min="0.5" max="5" required>
+
+            <label for="descrição">Descrição Detalhada:</label>
+            <textarea id="descrição" name="descrição" required></textarea>
+
+            <label for="preço">Preço:</label>
+            <input type="number" id="preço" name="preço">
+
+            <label for="quantidade">Quantidade em Estoque:</label>
+            <input type="number" id="quantidade" name="quantidade">
+            <br>
+            <label for="imagem ">Imagens:</label>
+            <input type="file" id="imagem" name="imagem" multiple accept="image/*" required>
+            <br>
+            
+            <button type="submit">Salvar</button>
+            <button type="button" onclick="window.location.href='lista.html'">Cancelar</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
+
